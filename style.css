@@ -1,0 +1,53 @@
+body{
+    background-color: #876445;
+    color: #F4DFBA;
+}
+p{
+    display: block;
+}
+h1{
+    text-align: center;
+}
+
+.no-todo-found p {
+    color: red;
+}
+
+.todo-done h3,
+.todo-done p {
+    text-decoration: line-through;
+    color: #2cc76f;
+}
+
+
+#formTodo{
+    margin: 50px 80px 20px;
+}
+.counter, #todolist , li{
+    margin: 50px 80px 20px;
+}
+input{
+    margin-bottom: 10px;
+    background-color: #876445   ;
+    border: none;   
+    border-bottom: 3px solid #EEC373;
+    color:  #F4DFBA;
+}
+
+input:hover {
+    border: 4px solid #CA965C;
+}
+input:focus {
+    border: 4px solid #EEC373;
+    outline: none;
+}   
+button{
+    background-color: #EEC373;
+    color: #876445;
+    font-weight: bolder;
+    padding: 5px 3px 3px;
+    -webkit-box-shadow: 10px 5px 5px 2px rgba(0,0,0,0.75);
+}
+button:active{
+    scale: 0.8;
+}

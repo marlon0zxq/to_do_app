@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>To DO APP</title>
+</head>
+<body>
+    <h1>Things To Do:</h1>
+
+    <div class="row">
+
+        <form id="formTodo" class="col">
+            <label for="title">Title:</label>
+            <br>
+            <input type="text" id="todo" autofocus required />
+            <br>
+            <label for="decription">Description:</label>
+            <br>
+            <input type="text" id="desc" />
+        <br>
+        <br>
+        <button id="btn_add" type="submit">Add to do</button> 
+    </form>
+
+    <div class="counter col">
+        Todo counter: <span class="todo-counter">0</span>
+        <br>
+        Pending : <span class="pending-counter">0</span>
+        <br>
+        Done : <span class="done-counter">0</span>
+        <br>
+        <ul id="todoList">
+            <li class="no-todo-found">
+                <p>
+                    No todo
+                </p>
+            </li>
+        </ul>
+    </div>
+        
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.6.5/dist/sweetalert2.all.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
